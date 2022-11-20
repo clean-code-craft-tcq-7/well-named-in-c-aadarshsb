@@ -1,26 +1,28 @@
 #include "globaldeclare.h"
+#include "testers.h"
 
-void testNumberToPair(int pairNumber,
-    enum MajorColor expectedMajor,
-    enum MinorColor expectedMinor)
+void testNumberToPair( \
+  int f_i32PairNumber, \
+  enum enumMajorColor f_enExpectedMajor, \
+  enum enumMinorColor f_enExpectedMinor )
 {
-    ColorPair colorPair = GetColorFromPairNumber(pairNumber);
-    char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
-    ColorPairToString(&colorPair, colorPairNames);
-    printf("Got pair %s\n", colorPairNames);
-    assert(colorPair.majorColor == expectedMajor);
-    assert(colorPair.minorColor == expectedMinor);
+    ColorPair_t ColorPair = GetColorFromPairNumber(f_i32PairNumber);
+    char i8ColorPairNames[MAX_COLORPAIR_NAME_CHARS];
+    ColorPairToString(&ColorPair, i8ColorPairNames);
+    printf("Got pair %s\n", i8ColorPairNames);
+    assert(ColorPair.enMajorColor == f_enExpectedMajor);
+    assert(ColorPair.enMinorColor == f_enExpectedMinor);
 }
 
-void testPairToNumber(
-    enum MajorColor major,
-    enum MinorColor minor,
-    int expectedPairNumber)
+void testPairToNumber( \
+  enum enumMajorColor f_enMajorColour, \
+  enum enumMinorColor f_enMinorColour, \
+  int f_i32ExpectedPairNumber )
 {
-    ColorPair colorPair;
-    colorPair.majorColor = major;
-    colorPair.minorColor = minor;
-    int pairNumber = GetPairNumberFromColor(&colorPair);
-    printf("Got pair number %d\n", pairNumber);
-    assert(pairNumber == expectedPairNumber);
+    ColorPair_t ColorPair;
+    ColorPair.enMajorColor = f_enMajorColour;
+    ColorPair.enMinorColor = f_enMinorColour;
+    int i32PairNumber = GetPairNumberFromColor(&ColorPair);
+    printf("Got pair number %d\n", i32PairNumber);
+    assert(i32PairNumber == f_i32ExpectedPairNumber);
 }
