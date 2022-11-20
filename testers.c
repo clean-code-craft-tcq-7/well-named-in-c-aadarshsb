@@ -1,5 +1,7 @@
 #include "globaldeclare.h"
 #include "testers.h"
+#include <assert.h>
+#include <stdio.h>
 
 void testNumberToPair( \
   int f_i32PairNumber, \
