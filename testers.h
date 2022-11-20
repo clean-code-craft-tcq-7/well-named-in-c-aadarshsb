@@ -1,5 +1,5 @@
 #ifndef TESTERS_H
-#ifdef TESTERS_H
+#define TESTERS_H
 
 #include "globaldeclare.h"
 
