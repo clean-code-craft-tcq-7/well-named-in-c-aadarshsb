@@ -1,5 +1,5 @@
 #ifndef GETTERS_H
-#ifdef GETTERS_H
+#define GETTERS_H
 
 #include "globaldeclare.h"
 
