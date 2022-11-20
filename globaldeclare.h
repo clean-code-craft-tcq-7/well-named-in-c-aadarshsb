@@ -1,5 +1,5 @@
 #ifndef GLOBALDECLARE_H
-#ifdef GLOBALDECLARE_H
+#define GLOBALDECLARE_H
 
 /*-----------INCLUDES------------------*/
 
