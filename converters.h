@@ -1,4 +1,4 @@
-#idndef CONVERTERS_H
+#ifndef CONVERTERS_H
 #ifdef CONVERTERS_H
 
 #include "globaldeclare.h"
