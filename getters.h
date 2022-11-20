@@ -3,7 +3,7 @@
 
 #include "globaldeclare.h"
 
-int GetPairNumberFromColor(const ColorPair* colorPair);
-ColorPair GetColorFromPairNumber(int pairNumber);
+int GetPairNumberFromColor(const ColorPair_t* f_ColorPair);
+ColorPair_t GetColorFromPairNumber(int f_i32PairNumber);
 
 #endif
