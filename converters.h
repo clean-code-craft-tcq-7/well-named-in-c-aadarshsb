@@ -1,5 +1,5 @@
 #ifndef CONVERTERS_H
-#ifdef CONVERTERS_H
+#define CONVERTERS_H
 
 #include "globaldeclare.h"
 
