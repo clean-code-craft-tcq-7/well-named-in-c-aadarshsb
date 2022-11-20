@@ -1,6 +1,6 @@
 #include "globaldeclare.h"
 #include "testers.h"
-#inlcude "getters.h"
+#include "getters.h"
 #include "converter.h"
 #include <assert.h>
 #include <stdio.h>
