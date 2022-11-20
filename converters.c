@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "converters.h"
 #include "globaldeclare.h"
 
