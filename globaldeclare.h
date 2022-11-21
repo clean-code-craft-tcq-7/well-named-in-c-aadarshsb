@@ -3,11 +3,6 @@
 
 /*-----------INCLUDES------------------*/
 
-/*-----------TYPEDEFS------------------*/
-typedef struct {
-  enum enumMajorColor enMajorColor;
-  enum enumMinorColor enMinorColor;
-}ColorPair_t;
 /*-----------DEFINES-------------------*/
 #define MAX_COLORPAIR_NAME_CHARS 16;
 
@@ -26,6 +21,11 @@ enum enumMinorColor {
   BROWN, 
   SLATE
 };
+/*-----------TYPEDEFS------------------*/
+typedef struct {
+  enum enumMajorColor enMajorColor;
+  enum enumMinorColor enMinorColor;
+}ColorPair_t;
 /*----------FUNCTION DECLARATIONS-----*/
 
 #endif
