@@ -6,8 +6,8 @@
 void PrintNumberFromColour(void)
 {
   unsigned int ui32VaildateMajorColor, ui32ValidateMinorColor;
-  unsigned int ui32UserRequest;
-  while(ui32UserRequest != 2)
+  unsigned int ui32UserRequest, ui32RequestExceed = 0;
+  while(ui32UserRequest != 2 || ui32RequestExceed > 3)
   {
     printf("Welcome, Please choose the following number and press Enter \n 1 - Convert Colour Code to Number \n 2 - Exit the Program \n");
     scanf("%u",&ui32UserRequest);
@@ -25,10 +25,12 @@ void PrintNumberFromColour(void)
       if(ui32VaildateMajorColor < 1 || ui32VaildateMajorColor > 5)
       {
         printf("Invalid Major Number, Try again!\n");
+        ui32RequestExceed++;
       }
       else if(ui32ValidateMinorColor < 1 || ui32ValidateMinorColor > 5)
       {
         printf("Invalid Minor Number, Try again!\n");
+        ui32RequestExceed++;
       }
       else
       {
@@ -41,6 +43,7 @@ void PrintNumberFromColour(void)
     else
     {
       printf("Sorry, Invaild Selection, Please Try Again \n");
+      ui32RequestExceed++;
     }
   }
 }
