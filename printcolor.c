@@ -1,5 +1,6 @@
 #include "printcolor.h"
 #include "globaldeclare.h"
+#include "getters.h"
 #include <stdio.h>
 
 void PrintNumberFromColour(void)
