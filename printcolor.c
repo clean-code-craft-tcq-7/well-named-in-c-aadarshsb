@@ -1,10 +1,6 @@
-#include "printcolour.h"
-#include "converters.h"
+#include "printcolor.h"
 #include "globaldeclare.h"
 #include <stdio.h>
-
-extern const char* gc_pi8arrMajorColorNames[];
-extern const char* gc_pi8arrMinorColorNames[];
 
 void PrintNumberFromColour(void)
 {
