@@ -32,7 +32,7 @@ void PrintNumberFromColour(void)
       }
       else
       {
-        ColorPair_t UserColorPair; UserColorPair.enMajorColor = ui32VaildateMajorColor; UserColorPair.enMinorColor = ui32ValidateMinorColor;
+        ColorPair_t UserColorPair; UserColorPair.enMajorColor = (ui32VaildateMajorColor-1); UserColorPair.enMinorColor = (ui32ValidateMinorColor-1);
         int i32UserResult = GetPairNumberFromColor(&UserColorPair);
         printf("The Number for the corresponding Colour combination is %d \n",i32UserResult);
         break;
