@@ -7,7 +7,7 @@ void PrintNumberFromColour(void)
 {
   unsigned int ui32VaildateMajorColor, ui32ValidateMinorColor;
   unsigned int ui32UserRequest, ui32RequestExceed = 0;
-  while(ui32UserRequest != 2 || ui32RequestExceed > 3)
+  while(ui32UserRequest != 2 && ui32RequestExceed < 3)
   {
     printf("Welcome, Please choose the following number and press Enter \n 1 - Convert Colour Code to Number \n 2 - Exit the Program \n");
     scanf("%u",&ui32UserRequest);
