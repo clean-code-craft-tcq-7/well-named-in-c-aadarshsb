@@ -14,9 +14,9 @@ void PrintManual(void)
   {
     for(int i32MinorIndex =0 ; i32MinorIndex < 5; i32MinorIndex++)
     {
-      ManualColourPrint.enMajorColor = i32MajorIndex ; anualColourPrint.enMajorColor = i32MinorIndex;
-      ColorPairToString(ManualColourPrint,i8ColourBuffer);
-      i32UserResult = GetPairNumberFromColor(&UserColorPair);
+      ManualColourPrint.enMajorColor = i32MajorIndex ; ManualColourPrint.enMinorColor = i32MinorIndex;
+      ColorPairToString(&ManualColourPrint,i8ColourBuffer);
+      i32UserResult = GetPairNumberFromColor(&ManualColourPrint);
       printf("%s %d \n",i8ColourBuffer,i32UserResult);
     }
   }
