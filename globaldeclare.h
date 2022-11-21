@@ -4,7 +4,7 @@
 /*-----------INCLUDES------------------*/
 
 /*-----------DEFINES-------------------*/
-#define MAX_COLORPAIR_NAME_CHARS 16;
+#define MAX_COLORPAIR_NAME_CHARS 16
 
 /*-----------ENUMS---------------------*/
 enum enumMajorColor {
