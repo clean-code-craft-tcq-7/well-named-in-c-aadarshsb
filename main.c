@@ -11,6 +11,8 @@ int main() {
     testPairToNumber(VIOLET, SLATE, 25);
     
     PrintNumberFromColour();
+    
+    PrintManual();
 
     return 0;
 }
