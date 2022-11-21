@@ -37,7 +37,5 @@ void PrintNumberFromColour(void)
         break;
       }
     }
-    else
-      break;
   }
 }
