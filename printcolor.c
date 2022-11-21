@@ -22,11 +22,11 @@ void PrintNumberFromColour(void)
       scanf("%u",&ui32VaildateMajorColor);
       printf("Choose the Major Colour \n  1-Black, 2- Orange, 3-Green, 4-Brown, 5-Stale \n");
       scanf("%u",&ui32ValidateMinorColor);
-      if(ui32VaildateMajorColor < 1 && ui32VaildateMajorColor > 5)
+      if(ui32VaildateMajorColor < 1 || ui32VaildateMajorColor > 5)
       {
         printf("Invalid Major Number, Try again!\n");
       }
-      else if(ui32ValidateMinorColor < 1 && ui32ValidateMinorColor > 5)
+      else if(ui32ValidateMinorColor < 1 || ui32ValidateMinorColor > 5)
       {
         printf("Invalid Minor Number, Try again!\n");
       }
