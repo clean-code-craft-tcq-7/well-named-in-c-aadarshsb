@@ -11,9 +11,10 @@ void PrintNumberFromColour(void)
   {
     printf("Welcome, Please choose the following number and press Enter \n 1 - Convert Colour Code to Number \n 2 - Exit the Program \n");
     scanf("%u",&ui32UserRequest);
-    if(ui32UserRequest < 1 && ui32UserRequest > 2)
+    if(ui32UserRequest  == 2)
     {
-      printf("Invaild selection!, Please try again \n");
+      printf("Thank you for using the Program, Bye! \n");
+      break;
     }
     else if(ui32UserRequest == 1)
     {
@@ -36,6 +37,10 @@ void PrintNumberFromColour(void)
         printf("The Number for the corresponding Colour combination is %d \n",i32UserResult);
         break;
       }
+    }
+    else
+    {
+      printf("Sorry, Invaild Selection, Please Try Again \n");
     }
   }
 }
